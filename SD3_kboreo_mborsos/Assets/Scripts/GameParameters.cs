@@ -32,6 +32,10 @@ public class GameParameters : MonoBehaviour
         DataContainer.players = players;
         DataContainer.numOfMoves = 0;
         DataContainer.playerTurn = 0;
+
+        GameObject.Find("Popup").GetComponent<CanvasGroup>().alpha = 0;
+        GameObject.Find("Popup").GetComponent<CanvasGroup>().interactable = false;
+        GameObject.Find("Popup").GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
     void Update()

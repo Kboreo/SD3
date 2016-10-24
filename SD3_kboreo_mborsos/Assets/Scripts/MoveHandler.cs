@@ -28,6 +28,13 @@ public class MoveHandler : MonoBehaviour {
 
         if (endResult == "")
             DataContainer.turnPrompt.GetComponent<Text>().text = nextTurn();
+        else
+        {
+            DataContainer.winPrompt.GetComponent<Text>().text = endResult;
+            GameObject.Find("Popup").GetComponent<CanvasGroup>().alpha = 1;
+            GameObject.Find("Popup").GetComponent<CanvasGroup>().interactable = true;
+            GameObject.Find("Popup").GetComponent<CanvasGroup>().blocksRaycasts = true;
+        }
     }
 
     string analyzeMoves()
