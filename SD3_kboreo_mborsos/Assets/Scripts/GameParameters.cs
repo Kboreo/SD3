@@ -15,7 +15,18 @@ public class GameParameters : MonoBehaviour
 
     void Start()
     {
-        int[,] playerMoves = new int [3, 3];
+        initializeGameBoard();
+    }
+
+    void Update()
+    {
+        turnPrompt = DataContainer.turnPrompt;
+        winPrompt = DataContainer.winPrompt;
+    }
+
+    public void initializeGameBoard()
+    {
+        int[,] playerMoves = new int[3, 3];
         DataContainer.playerMoves = playerMoves;
 
         if (turnPrompt != null)
@@ -36,11 +47,5 @@ public class GameParameters : MonoBehaviour
         GameObject.Find("Popup").GetComponent<CanvasGroup>().alpha = 0;
         GameObject.Find("Popup").GetComponent<CanvasGroup>().interactable = false;
         GameObject.Find("Popup").GetComponent<CanvasGroup>().blocksRaycasts = false;
-    }
-
-    void Update()
-    {
-        turnPrompt = DataContainer.turnPrompt;
-        winPrompt = DataContainer.winPrompt;
     }
 }
