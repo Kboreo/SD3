@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\DataContainer.cs" />
+     <Compile Include="Assets\Scripts\EndGameHandler.cs" />
      <Compile Include="Assets\Scripts\GameParameters.cs" />
      <Compile Include="Assets\Scripts\MoveHandler.cs" />
      <Compile Include="Assets\Scripts\PlayerInfo.cs" />
