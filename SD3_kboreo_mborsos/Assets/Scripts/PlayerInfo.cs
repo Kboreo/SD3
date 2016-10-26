@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+﻿//Authors: Kodey Boreo and Marshall Borsos
+using UnityEngine;
 using UnityEngine.UI;
 
-//Contains player information such as player name, character image, and player number
+//Contains player information
 public class PlayerInfo : MonoBehaviour
 {
-    public string playerName = "";
-    public Sprite  playerIcon;
+    public string playerName = "";      //Name of player
+    public Sprite  playerIcon;          //Character icon that represents player in-game
 }
