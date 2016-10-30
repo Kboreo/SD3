@@ -33,24 +33,23 @@ public class GameParameters : MonoBehaviour
     {
         int[,] playerMoves = new int[3, 3];         //Create 3x3 array to represent the game board
         DataContainer.playerMoves = playerMoves;    //Assign each cell in the global array a value of zero through passing the initial 3x3 array
-
-        //If the game object reference for the current player turn prompt is found, clear its text and pass the object reference for global data usage
-        if (turnPrompt != null)
-        {
-            turnPrompt.GetComponent<Text>().text = "";
-            DataContainer.turnPrompt = turnPrompt;
-        }
-
-        //If the game object reference for the win/tie prompt is found, clear its text and pass the object reference for global data usage
-        if (winPrompt != null)
-        {
-            winPrompt.GetComponent<Text>().text = "";
-            DataContainer.winPrompt = winPrompt;
-        }
-
         DataContainer.players = players;    //Re-assign global data for players
         DataContainer.numOfMoves = 0;       //Reset the total number of moves to 0
         DataContainer.playerTurn = 0;       //Reset the current player to player 1
+
+		//If the game object reference for the current player turn prompt is found, clear its text and pass the object reference for global data usage
+		if (turnPrompt != null)
+		{
+			turnPrompt.GetComponent<Text> ().text = "It is" + DataContainer.players [DataContainer.playerTurn].playerName + "'s turn!";
+			DataContainer.turnPrompt = turnPrompt;
+		}
+
+		//If the game object reference for the win/tie prompt is found, clear its text and pass the object reference for global data usage
+		if (winPrompt != null)
+		{
+			winPrompt.GetComponent<Text>().text = "";
+			DataContainer.winPrompt = winPrompt;
+		}
 
         //Hide the popup which shows when a win or cat's game occurs
         GameObject.Find("Popup").GetComponent<CanvasGroup>().alpha = 0;
