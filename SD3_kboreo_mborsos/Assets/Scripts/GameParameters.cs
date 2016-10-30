@@ -40,7 +40,7 @@ public class GameParameters : MonoBehaviour
 		//If the game object reference for the current player turn prompt is found, clear its text and pass the object reference for global data usage
 		if (turnPrompt != null)
 		{
-			turnPrompt.GetComponent<Text> ().text = "It is" + DataContainer.players [DataContainer.playerTurn].playerName + "'s turn!";
+			turnPrompt.GetComponent<Text> ().text = "It is " + DataContainer.players [DataContainer.playerTurn].playerName + "'s turn!";
 			DataContainer.turnPrompt = turnPrompt;
 		}
 
