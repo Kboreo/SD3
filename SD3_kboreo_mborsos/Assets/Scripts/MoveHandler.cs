@@ -146,8 +146,24 @@ public class MoveHandler : MonoBehaviour {
     //Set parameters for next player's turn and prompt that player to make a move
     string nextTurn()
     {
+		//Initialize the turnPrompt String
         string turnPrompt = "";
 
+		//Check if it is player one's or player two's turn and then either increment or decrement depending on value
+		if (DataContainer.playerTurn == 1)
+		{
+			DataContainer.playerTurn--;
+			//Set prompt so that it tells user that it is player one's turn 
+			turnPrompt = "It is " + DataContainer.players[DataContainer.playerTurn].playerName + "'s turn!";
+		}
+		else if (DataContainer.playerTurn == 0)
+		{
+			DataContainer.playerTurn++;
+			//Set prompt so that it tells user that it is player one's turn 
+			turnPrompt = "It is " + DataContainer.players[DataContainer.playerTurn].playerName + "'s turn!";
+		}
+
+		// return the turnPrompt string back. 
         return turnPrompt;
     }
 
