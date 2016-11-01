@@ -72,10 +72,7 @@ public class GameModeDetermination : MonoBehaviour {
 
 	public void startGame()
 	{
-		//initializeGameBoard ();
-
 		//Load "Game Board" scene. 
 		SceneManager.LoadScene("Game Board");
-
 	}
 }
