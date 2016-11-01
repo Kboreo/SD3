@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameModeDetermination : MonoBehaviour {
 
@@ -67,5 +68,14 @@ public class GameModeDetermination : MonoBehaviour {
 			//Enables computer logic
 			DataContainer.computerLogic = true;
 		}
+	}
+
+	public void startGame()
+	{
+		//initializeGameBoard ();
+
+		//Load "Game Board" scene. 
+		SceneManager.LoadScene("Game Board");
+
 	}
 }
