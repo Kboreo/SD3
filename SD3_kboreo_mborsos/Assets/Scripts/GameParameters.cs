@@ -33,9 +33,12 @@ public class GameParameters : MonoBehaviour
     {
         int[,] playerMoves = new int[3, 3];         //Create 3x3 array to represent the game board
         DataContainer.playerMoves = playerMoves;    //Assign each cell in the global array a value of zero through passing the initial 3x3 array
+        players[0].playerIcon = DataContainer.player1Sprite;    //Assign character icon of player 1
+        players[1].playerIcon = DataContainer.player2Sprite;    //Assign character icon of player 2
         DataContainer.players = players;    //Re-assign global data for players
         DataContainer.numOfMoves = 0;       //Reset the total number of moves to 0
         DataContainer.playerTurn = 0;       //Reset the current player to player 1
+
 
 		//If the game object reference for the current player turn prompt is found, clear its text and pass the object reference for global data usage
 		if (turnPrompt != null)
