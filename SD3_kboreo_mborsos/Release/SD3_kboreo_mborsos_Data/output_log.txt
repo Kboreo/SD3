@@ -1,0 +1,38 @@
+Initialize engine version: 5.4.2f2 (b7e030c65c9b)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Marshall\Documents\SD3\SD3_kboreo_mborsos\Release\SD3_kboreo_mborsos_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Marshall\Documents\SD3\SD3_kboreo_mborsos\Release\SD3_kboreo_mborsos_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Marshall\Documents\SD3\SD3_kboreo_mborsos\Release\SD3_kboreo_mborsos_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Marshall\Documents\SD3\SD3_kboreo_mborsos\Release\SD3_kboreo_mborsos_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Marshall\Documents\SD3\SD3_kboreo_mborsos\Release\SD3_kboreo_mborsos_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Marshall\Documents\SD3\SD3_kboreo_mborsos\Release\SD3_kboreo_mborsos_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Marshall\Documents\SD3\SD3_kboreo_mborsos\Release\SD3_kboreo_mborsos_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Marshall\Documents\SD3\SD3_kboreo_mborsos\Release\SD3_kboreo_mborsos_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.231 seconds
+Platform assembly: C:\Users\Marshall\Documents\SD3\SD3_kboreo_mborsos\Release\SD3_kboreo_mborsos_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Marshall\Documents\SD3\SD3_kboreo_mborsos\Release\SD3_kboreo_mborsos_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 3520x1080 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 1.359197 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.816625 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 286.
+Total: 0.227360 ms (FindLiveObjects: 0.016365 ms CreateObjectMapping: 0.013150 ms MarkObjects: 0.190246 ms  DeleteObjects: 0.002922 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.346594 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 263.
+Total: 0.241972 ms (FindLiveObjects: 0.051141 ms CreateObjectMapping: 0.007305 ms MarkObjects: 0.175342 ms  DeleteObjects: 0.007598 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2c98 -> priority: 1 
