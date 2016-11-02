@@ -26,8 +26,16 @@ public class MoveHandler : MonoBehaviour {
             endResult = analyzeMoves();
 
         //If no win or cat's game occurred, set parameters and indicate that it is the next player's turn
-        if (endResult == "")
-            DataContainer.turnPrompt.GetComponent<Text>().text = nextTurn();
+		if (endResult == "")
+		{
+			DataContainer.turnPrompt.GetComponent<Text> ().text = nextTurn ();
+
+			//If computer logic is enabled and it is player 2's turn, call computerMove function
+			if (DataContainer.computerLogic == true && DataContainer.playerTurn == 1)
+			{
+				computerMove();
+			}
+		}
         //Otherwise, show the popup and report who won or that a cat's game occurred
         else
         {
@@ -37,6 +45,35 @@ public class MoveHandler : MonoBehaviour {
             GameObject.Find("Popup").GetComponent<CanvasGroup>().blocksRaycasts = true;
         }
     }
+
+	//Function to perform the computer turn logic
+	public void computerMove()
+	{
+		bool emptySpot = false;
+		string tileName;
+		//Search tile array for empty tile
+		//For each column
+		for (int j = 0; j < 3; j++) 
+		{   
+			//Check each row
+			for (int i = 0; i < 3; i++) 
+			{
+				//if current tile is empty 
+				if (DataContainer.playerMoves [i, j] == 0) 
+				{
+					emptySpot = true;
+					tileName = "Tile " + i + "," + j;
+					GameObject.Find (tileName).GetComponent<Button>().onClick.Invoke();
+
+					break;
+				}
+			}
+			if(emptySpot == true)
+				break;
+		}
+	}
+
+
 
     //Analyze the int game board array to see if a winning move has occurred
     string analyzeMoves()
