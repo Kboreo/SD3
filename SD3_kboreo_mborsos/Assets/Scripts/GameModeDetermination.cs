@@ -92,14 +92,17 @@ public class GameModeDetermination : MonoBehaviour {
     {
         switch (characterMode)
         {
+            //Clears sprites if player returns to character mode selection
             case 0:
                 DataContainer.player1Sprite = null;
                 DataContainer.player2Sprite = null;
                 break;
+            //Classic mode ==> get icons for X and O
             case 1:
                 DataContainer.player1Sprite = Resources.Load<Sprite>("Images/Shape - X");
                 DataContainer.player2Sprite = Resources.Load<Sprite>("Images/Shape - O");
                 break;
+            //Sweet-Tac-Tal ==> get icons for Professor Sweet and Professor Givental
             case 2:
                 DataContainer.player1Sprite = Resources.Load<Sprite>("Images/Shape - Sweet");
                 DataContainer.player2Sprite = Resources.Load<Sprite>("Images/Shape - Givental");
